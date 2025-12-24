@@ -66,3 +66,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// Audio Autoplay Handling
+document.addEventListener("DOMContentLoaded", () => {
+    const audio = document.getElementById("bg-music");
+    if(audio) {
+        audio.play().catch(error => {
+            console.log("Autoplay prevented. Music will start on interaction.");
+            document.body.addEventListener("click", () => {
+                audio.play();
+            }, { once: true });
+        });
+    }
+});
+
