@@ -4,51 +4,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EY Abriss und mehr | Radical Digital Excellence</title>
+    <title>EY Abriss und mehr | Ihr Partner für Abriss & Sanierung</title>
+    <meta name="description"
+        content="Professioneller Abriss, Entkernung und Sanierung in Berlin und Umgebung. Kosteneffizient durch präzise Materialtrennung.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <meta name="description"
-        content="Wir erschaffen digitale Realitäten, die den Status Quo sprengen. Arrogant gut, technisch perfekt.">
 </head>
 
 <body>
-    <nav class="glass-nav">
-        <img src="logo.png" alt="EY Logo" class="nav-logo" style="height: 40px; margin-right: 15px;">
-        <a href="#" class="nav-link">Projekte</a>
-        <a href="#" class="nav-link">Manifest</a>
-        <a href="#" class="nav-link">Kontakt</a>
-    </nav>
-
-    <div class="gradient-blob blob-1"></div>
-    <div class="gradient-blob blob-2"></div>
-
-    <section class="hero-section">
-        <img src="hero.png" alt="Abstract Aurora Artwork" class="background-asset">
-        <img src="hero.png" alt="Main Artwork" class="main-asset">
-
-        <div class="content">
-            <div class="title-container">
-                <h1>EY Abriss und mehr</h1>
+    <!-- Navigation -->
+    <header class="main-header">
+        <div class="container nav-container">
+            <div class="logo-area">
+                <img src="logo.png" alt="EY Abriss und mehr Logo" class="nav-logo">
             </div>
-            <p class="subtitle">Ihr Partner für Abriss und Sanierung. Arrogant gut, technisch perfekt.</p>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Start</a></li>
+                    <li><a href="#leistungen">Leistungen</a></li>
+                    <li><a href="#vorteile">Warum wir?</a></li>
+                    <li><a href="#referenzen">Referenzen</a></li>
+                    <li><a href="#kontakt" class="btn-nav">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-            <div class="cta-container">
-                <a href="#" class="primary-btn">Let's Rule the Web</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Ihr Spezialist für Abriss & Sanierung</h1>
+            <p class="hero-sub">Vertrauen, Kompetenz und faire Preise durch fachgerechte Materialtrennung.</p>
+            <div class="hero-buttons">
+                <a href="#kontakt" class="btn btn-primary">Angebot anfordern</a>
+                <a href="#leistungen" class="btn btn-secondary">Unsere Leistungen</a>
             </div>
         </div>
     </section>
 
-    <script>
-        // Simple parallax effect for the assets
-        document.addEventListener('mousemove', (e) => {
-            const xAxis = (window.innerWidth / 2 - e.pageX) / 25;
-            const yAxis = (window.innerHeight / 2 - e.pageY) / 25;
-            const mainAsset = document.querySelector('.main-asset');
-            mainAsset.style.transform = `translate(calc(-50% + ${xAxis}px), calc(-50% + ${yAxis}px))`;
-        });
-    </script>
+    <!-- USP / Advantages -->
+    <section id="vorteile" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Warum EY Abriss und mehr?</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="grid-3">
+                <div class="feature-box">
+                    <h3>Kosteneffizienz</h3>
+                    <p>Durch strikte Trennung der Materialien bereits beim Abriss senken wir Entsorgungskosten massiv
+                        und geben diesen Preisvorteil an Sie weiter.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>Vertrauen & Transparenz</h3>
+                    <p>Keine versteckten Kosten. Wir arbeiten transparent, zuverlässig und termingerecht. Ihr Projekt
+                        ist bei uns in sicheren Händen.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>Nachhaltigkeit</h3>
+                    <p>Wir sorgen für eine umweltgerechte Entsorgung und Recycling der Baustoffe. Sauberkeit und Ordnung
+                        auf der Baustelle sind selbstverständlich.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="leistungen" class="section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Unsere Leistungen</h2>
+                <p>Umfassender Service für private und gewerbliche Kunden</p>
+                <div class="divider"></div>
+            </div>
+            <div class="grid-3 services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏗️</div>
+                    <h3>Komplettabriss</h3>
+                    <p>Vollständiger Rückbau von Wohnhäusern, Garagen und Gewerbeimmobilien inklusive
+                        Fundamententfernung.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔨</div>
+                    <h3>Entkernung</h3>
+                    <p>Fachgerechte Entfernung von Einbauten, Böden und nicht-tragenden Wänden bis auf den
+                        Rohbauzustand.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">♻️</div>
+                    <h3>Entsorgung</h3>
+                    <p>Fachgerechte Sortierung und Abtransport von Bauschutt, Holz und Baumischabfällen.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚧</div>
+                    <h3>Asbestsanierung</h3>
+                    <p>Zertifizierter Umgang mit Schadstoffen. Sicherer Rückbau und Entsorgung nach TRGS 519.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌱</div>
+                    <h3>Erdarbeiten</h3>
+                    <p>Geländevorbereitung, Aushub für Baugruben und Planierung des Grundstücks nach dem Abriss.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🧹</div>
+                    <h3>Beräumung</h3>
+                    <p>Besenreine Übergabe von Objekten, Entrümpelung und Baufeldfreimachung.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- References -->
+    <section id="referenzen" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Ausgewählte Referenzen</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="grid-2 references-grid">
+                <div class="reference-item">
+                    <div class="ref-content">
+                        <h4>Rückbau Einfamilienhaus</h4>
+                        <span class="location">Berlin - Pankow</span>
+                        <p>Komletter Abriss eines Altbaus aus den 60er Jahren inklusive Asbestsanierung und
+                            Fundamentaushub. Bauzeit: 5 Tage.</p>
+                    </div>
+                </div>
+                <div class="reference-item">
+                    <div class="ref-content">
+                        <h4>Entkernung Büroetage</h4>
+                        <span class="location">Berlin - Mitte</span>
+                        <p>Rückbau von 400m² Bürofläche in den Rohbauzustand. Demontage von Trockenbauwänden, Decken und
+                            Bodenbelägen.</p>
+                    </div>
+                </div>
+                <div class="reference-item">
+                    <div class="ref-content">
+                        <h4>Industrieabbruch</h4>
+                        <span class="location">Brandenburg</span>
+                        <p>Abbruch einer Lagerhalle mit Stahlskelettbauweise. Trennung von Metallen und Bauschutt vor
+                            Ort.</p>
+                    </div>
+                </div>
+                <div class="reference-item">
+                    <div class="ref-content">
+                        <h4>Gartenlaube & Garage</h4>
+                        <span class="location">Potsdam</span>
+                        <p>Schneller und sauberer Abriss von Nebengebäuden auf einem Privatgrundstück.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section id="kontakt" class="cta-section section-padding">
+        <div class="container text-center">
+            <h2>Starten Sie Ihr Projekt mit uns</h2>
+            <p>Kontaktieren Sie uns für eine kostenlose Besichtigung und ein unverbindliches Angebot.</p>
+            <div class="contact-methods">
+                <a href="tel:+49123456789" class="btn btn-primary-inv">📞 030 / 123 456 78</a>
+                <a href="mailto:info@ey-abriss.de" class="btn btn-secondary-inv">✉️ info@ey-abriss.de</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container text-center">
+            <div class="footer-logo">
+                <strong>EY Abriss und mehr</strong>
+            </div>
+            <p class="footer-text">&copy; 2024 EY Abriss und mehr. Alle Rechte vorbehalten.</p>
+            <div class="footer-links">
+                <a href="#">Impressum</a> |
+                <a href="#">Datenschutz</a> |
+                <a href="#">AGB</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
