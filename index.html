@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURORA | Radical Digital Excellence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <meta name="description" content="Wir erschaffen digitale Realitäten, die den Status Quo sprengen. Arrogant gut, technisch perfekt.">
+</head>
+<body>
+    <nav class="glass-nav">
+        <a href="#" class="nav-link">Projekte</a>
+        <a href="#" class="nav-link">Manifest</a>
+        <a href="#" class="nav-link">Kontakt</a>
+    </nav>
+
+    <div class="gradient-blob blob-1"></div>
+    <div class="gradient-blob blob-2"></div>
+
+    <section class="hero-section">
+        <img src="hero.png" alt="Abstract Aurora Artwork" class="background-asset">
+        <img src="hero.png" alt="Main Artwork" class="main-asset">
+
+        <div class="content">
+            <div class="title-container">
+                <h1>AURORA</h1>
+            </div>
+            <p class="subtitle">Wir bauen nicht nur Websites. Wir erschaffen Ikonen.</p>
+            
+            <div class="cta-container">
+                <a href="#" class="primary-btn">Let's Rule the Web</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Simple parallax effect for the assets
+        document.addEventListener('mousemove', (e) => {
+            const xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+            const yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+            const mainAsset = document.querySelector('.main-asset');
+            mainAsset.style.transform = `translate(calc(-50% + ${xAxis}px), calc(-50% + ${yAxis}px))`;
+        });
+    </script>
+</body>
+</html>

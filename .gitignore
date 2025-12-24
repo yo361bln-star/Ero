@@ -1,0 +1,13 @@
+/bin/
+/cmd/
+/dev/
+/etc/
+/mingw64/
+/tmp/
+/usr/
+/git-bash.exe
+/git-cmd.exe
+/LICENSE.txt
+/README.portable
+.DS_Store
+Thumbs.db
