@@ -116,15 +116,57 @@ h4 {
 }
 
 /* Hero Section */
+/* Hero Section */
 .hero-section {
     position: relative;
     height: 80vh;
-    background-image: url('hero_excavator.png');
+    /* Christmas Background */
+    background-image: url('https://images.unsplash.com/photo-1457269449834-928af64c684d?q=80&w=1920&auto=format&fit=crop');
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     color: #fff;
+    overflow: hidden;
+}
+
+/* Flying Santa Animation */
+.santa-container {
+    position: fixed;
+    top: 20%;
+    right: -300px;
+    width: 250px;
+    opacity: 0.9;
+    z-index: 1500;
+    pointer-events: none;
+    animation: flySanta 20s linear infinite;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+}
+
+@keyframes flySanta {
+    0% {
+        right: -300px;
+        top: 15%;
+        transform: rotate(5deg);
+    }
+
+    25% {
+        top: 20%;
+    }
+
+    50% {
+        top: 10%;
+    }
+
+    75% {
+        top: 25%;
+    }
+
+    100% {
+        right: 120%;
+        transform: rotate(-5deg);
+        top: 15%;
+    }
 }
 
 .hero-overlay {
@@ -366,6 +408,7 @@ h4 {
         margin-left: 0;
     }
 }
+
 /* Lightbox Styling */
 .lightbox-hidden {
     display: none;
@@ -402,7 +445,7 @@ h4 {
 #lightbox-img {
     max-height: 70vh;
     max-width: 100%;
-    box-shadow: 0 5px 30px rgba(0,0,0,0.5);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
     border: 2px solid #333;
     border-radius: 4px;
 }
@@ -442,16 +485,23 @@ h4 {
 }
 
 @keyframes zoomIn {
-    from { transform: scale(0.9); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 @media (max-width: 768px) {
     #lightbox-desc {
         font-size: 0.9rem;
     }
+
     #lightbox-title {
         font-size: 1.2rem;
     }
 }
-
