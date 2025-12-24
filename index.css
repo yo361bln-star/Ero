@@ -247,9 +247,28 @@ h4 {
 /* References styling */
 .reference-item {
     background: #fff;
+    padding: 0;
+    border-left: none;
+    border-bottom: 4px solid var(--primary-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.reference-item:hover {
+    transform: translateY(-5px);
+}
+
+.ref-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.ref-content {
     padding: 25px;
-    border-left: 4px solid var(--primary-color);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .reference-item .location {
